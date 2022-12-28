@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+:root {
+    --betterblack: #252525;
+    --bgcolor: #7FBEB7;
+    --menucolor: #598580;
+    --shadecolor: #0000005b;
+    --accentcolor: #FFFAB9;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--bgcolor);
+}
+
+header {
+    background-image: linear-gradient(var(--shadecolor), transparent);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: auto;
+    font-family: 'Poppins';
+}
+
+#highlight-title {
+    color: var(--accentcolor);
+}
+
+#nav-title a {
+    display: block;
+    margin: 60px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 99;
+}
+
+#nav-pages {
+    display: block;
+    margin: auto 60px auto auto;
+}
+
+#nav-pages a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 10px 20px 10px 20px;
+    margin: auto 5px auto 5px;
+    transition: 300ms ease;
+}
+
+#nav-pages a:hover {
+    color: white;
+    background-color: white;
+    color: var(--betterblack);
+    border-width: 0px;
+    transition: 300ms ease;
+}
+
+#nav-pages a#download-button {
+    color: var(--betterblack);
+    font-weight: 600;
+    background-color: var(--accentcolor);
+}
+
+#nav-pages a#download-button:hover {
+    background-color: white;
+}
+
+nav a#menu {
+    display: none;
+    text-decoration: none;
+    margin: auto 40px auto auto;
+    scale: 150%;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    #nav-pages {
+        position: fixed;
+        background-color: var(--menucolor);
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 98;
+        padding: 125px 0px 0px 0px;
+        margin: auto;
+        transition: 300ms ease;
+    }
+
+    #nav-pages.ativo {
+        left: 0;
+    }
+
+    #nav-pages a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        padding: 30px 30px;
+        margin: 0px;
+    }
+
+    #nav-pages a:hover {
+        background: white;
+        color: var(--betterblack);
+    }
+
+    nav {
+        height: fit-content;
+    }
+
+    nav a#menu {
+        display: block;
+        z-index: 100;
+    }
+}
