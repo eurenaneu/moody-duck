@@ -76,7 +76,7 @@ nav {
 nav a#menu {
     display: none;
     text-decoration: none;
-    margin: auto 40px auto auto;
+    margin: auto 60px auto auto;
     scale: 150%;
     cursor: pointer;
     color: white;
@@ -122,4 +122,17 @@ nav a#menu {
         display: block;
         z-index: 100;
     }
+
+}
+
+@media screen and (max-width: 610px) {
+    
+    #nav-title a {
+        margin-left: 30px;
+    }
+
+    nav a#menu {
+        margin-right: 30px;
+    }
+    
 }
