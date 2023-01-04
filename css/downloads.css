@@ -15,8 +15,8 @@ body {
 }
 
 header {
-    /* background-color: var(--menucolor); */
     background-image: linear-gradient(var(--shadecolor), transparent);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     position: fixed;
     width: 100%;
@@ -141,6 +141,12 @@ nav a#menu {
     padding: 40px 15px 400px;
     width: 100%;
     box-sizing: border-box;
+    margin: auto;
+}
+
+.teste p {
+    width: fit-content;
+    margin: auto;
 }
 
 @media screen and (max-width: 960px) {
@@ -157,13 +163,14 @@ nav a#menu {
         margin: auto;
         transition: 300ms ease;
     }
-    
+
     #nav-pages a#download-button {
-        background-color: var(--menucolor);
-        /* text-decoration: underline; */
-        border-style: solid;
-        border-width: 1px;
-        color: white;
+        background-color: var(--accentcolor);
+        color: var(--betterblack);
+    }
+
+    #nav-pages a#download-button:hover {
+        background-color: white;
     }
 
     #nav-pages.ativo {
@@ -172,12 +179,11 @@ nav a#menu {
 
     #nav-pages a {
         display: block;
-        width: max-content;
-        background-color: var(--menucolor);
+        width: 100vw;
         text-align: center;
         border-radius: 0px;
-        padding: 30px 30px;
-        margin: auto;
+        padding: 30px 0;
+        margin: 0 auto;
     }
 
     #nav-pages a:hover {
