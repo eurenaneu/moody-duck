@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="img/favicon-32x32.ico" type="image/x-ico">
     <link rel="stylesheet" href="css/index.css">
 
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 
     <title>MoodyDuck!</title>
 
@@ -45,9 +45,25 @@
 
     
     <main class="main">
-        <img src="img/duck_img.png" class="main-img">
-        <p>O MoodyDuck é um aplicativo para Android que te oferece um diário privado de humor</p>
+        <section>
+            <div class="welcome-container">
+                <h1 id="welcome-title">Moody<span>Duck!</span></h1>
+                <p>Um aplicativo para Android que te oferece um diário privado de humor</p>
+            </div>
+        </section>
+
+        <section class="about-container">
+            <div class="about-img">
+                <img src="img/duck_img.png" alt="Logo do aplicativo MoodyDuck">
+            </div>
+            <div class="about-text">
+                <h1>ORIGEM</h1>
+                <p>Desenvolvido por alunos do curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> do SENAI, o MoodyDuck tem como objetivo
+                    oferecer aos seus usuários um diário privado que serve tanto como acompanhamento para tratamento profissional quanto
+                    um lugar aconchegante e personalizado para registrar seus sentimentos e praticar hábitos saudáveis.
+                </p>
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>

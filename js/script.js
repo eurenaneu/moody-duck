@@ -1,5 +1,4 @@
 const menu_button = document.getElementById('nav-pages');
-const download_button = document.getElementById('download-button');
 
 function showMenu() {
 
