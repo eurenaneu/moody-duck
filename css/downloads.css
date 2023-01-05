@@ -15,9 +15,10 @@ body {
 }
 
 header {
-    background-image: linear-gradient(var(--shadecolor), transparent);
+    background-color: var(--betterblack);
+    /* background-image: linear-gradient(var(--shadecolor), transparent);
     -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
     position: fixed;
     width: 100%;
 }
