@@ -156,6 +156,9 @@ nav a#menu {
 }
 
 @media screen and (max-width: 960px) {
+
+    /* style nav */
+
     #nav-pages {
         background-color: var(--menucolor);
         position: fixed;
@@ -206,10 +209,34 @@ nav a#menu {
         z-index: 100;
     }
 
+    /* style section about */
+
+    .about-img > img {
+        height: 250px;
+    }
+
+    .about-text {
+        width: 50%;
+        padding: 40px 20px 40px 40px;
+        text-align: start;
+    }
+    
+    .about-text > p {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .about-text > h1 {
+        margin: 0 0 10px 0;
+        font-size: 24px;
+    }
+
 }
 
 @media screen and (max-width: 610px) {
     
+    /* style nav */
+
     #nav-title a {
         margin-left: 30px;
     }
@@ -217,5 +244,39 @@ nav a#menu {
     nav a#menu {
         margin-right: 30px;
     }
+
+    /* style section about */
     
+    .about-container {
+        display: block;
+    }
+
+    .about-img {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-text > h1 {
+        margin: 10px 0px;
+    }
+
+    /* style section welcome */
+
+    .welcome-container > p {
+        margin: 15px 75px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    /* style section welcome */
+
 }
